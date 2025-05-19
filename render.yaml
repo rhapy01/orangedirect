@@ -11,16 +11,13 @@ services:
       - key: PORT
         value: 10000
       - key: MONGODB_URI
-        fromDatabase:
-          name: orange-directory-db
-          property: connectionString
+        value: mongodb+srv://babrawitch001:ErxixIg6YcxO703A@cluster0.bolrdly.mongodb.net/orange-directory?retryWrites=true&w=majority&appName=Cluster0
 
   # Frontend static site
-  - type: web
+  - type: static
     name: orange-directory-frontend
-    env: static
     buildCommand: echo "No build step needed for static site"
-    staticPublishPath: ./
+    publishDir: .
     routes:
       - type: rewrite
         source: /*
