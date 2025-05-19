@@ -16,12 +16,12 @@ services:
   # Frontend static site
   - type: static
     name: orange-directory-frontend
-    buildCommand: echo "No build step needed for static site"
+    buildCommand: echo "Deploying static site"
     publishDir: .
-    routes:
-      - type: rewrite
-        source: /*
-        destination: /index.html
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: no-cache
 
 databases:
   - name: orange-directory-db
