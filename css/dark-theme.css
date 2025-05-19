@@ -1,0 +1,228 @@
+/* Dark Theme for Orange Directory */
+
+:root {
+  /* Original colors for reference */
+  --original-orange-primary: #FF8C00;
+  --original-orange-secondary: #FF6B00;
+  --original-orange-light: #FFA500;
+  --original-orange-dark: #E56717;
+  --original-orange-bg: #FF8C00;
+  
+  /* New darker colors */
+  --orange-primary: #FF8C00;
+  --orange-secondary: #FF6B00;
+  --orange-light: #FFA500;
+  --orange-dark: #E56717;
+  
+  /* Dark backgrounds instead of orange */
+  --orange-bg: #121212;
+  --dark-bg: #0a0a0a;
+  --darker-bg: #050505;
+  
+  /* Text colors */
+  --light-text: #FFFFFF;
+  --dark-text: #EEEEEE;
+  --grey-text: #AAAAAA;
+  
+  /* Card backgrounds */
+  --card-bg: #1E1E1E;
+  --card-hover: #2A2A2A;
+  
+  /* Accent colors */
+  --accent-color: #FF6B00;
+  --accent-hover: #FF8C00;
+}
+
+/* Body and general styles */
+body {
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+}
+
+/* Header styles */
+.header {
+  background-color: var(--darker-bg);
+  border-bottom: 1px solid rgba(255, 107, 0, 0.2);
+}
+
+.logo-text {
+  color: var(--orange-primary);
+}
+
+.main-nav a {
+  color: var(--light-text);
+}
+
+.main-nav a:hover, 
+.main-nav a.active {
+  color: var(--orange-primary);
+}
+
+/* Featured tool styles */
+.featured-tool {
+  background-color: var(--card-bg);
+  border: 1px solid rgba(255, 107, 0, 0.3);
+}
+
+.featured-badge {
+  background-color: var(--orange-primary);
+  color: var(--dark-bg);
+}
+
+.featured-title {
+  color: var(--light-text);
+}
+
+.featured-description {
+  color: var(--grey-text);
+}
+
+/* Tool card styles */
+.tool-card {
+  background-color: var(--card-bg);
+  border: 1px solid rgba(255, 107, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.tool-card:hover {
+  background-color: var(--card-hover);
+  border-color: var(--orange-primary);
+}
+
+.tool-title {
+  color: var(--light-text);
+}
+
+.tool-description {
+  color: var(--grey-text);
+}
+
+/* Tech tags */
+.tech-tag {
+  background-color: rgba(255, 107, 0, 0.2);
+  color: var(--orange-primary);
+}
+
+/* Buttons */
+.btn.primary {
+  background-color: var(--orange-primary);
+  color: var(--dark-bg);
+}
+
+.btn.secondary {
+  background-color: transparent;
+  border: 1px solid var(--orange-primary);
+  color: var(--orange-primary);
+}
+
+.btn.accent {
+  background-color: rgba(255, 107, 0, 0.2);
+  color: var(--orange-primary);
+}
+
+.link-btn {
+  background-color: rgba(255, 107, 0, 0.2);
+  color: var(--orange-primary);
+}
+
+.link-btn:hover {
+  background-color: var(--orange-primary);
+  color: var(--dark-bg);
+}
+
+/* Filters */
+.filters {
+  background-color: var(--card-bg);
+  border: 1px solid rgba(255, 107, 0, 0.2);
+}
+
+.search-container input {
+  background-color: rgba(10, 10, 10, 0.5);
+  color: var(--light-text);
+  border: 1px solid rgba(255, 107, 0, 0.2);
+}
+
+.search-container i {
+  color: var(--orange-primary);
+}
+
+select {
+  background-color: rgba(10, 10, 10, 0.5);
+  color: var(--light-text);
+  border: 1px solid rgba(255, 107, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--darker-bg);
+  border-top: 1px solid rgba(255, 107, 0, 0.2);
+}
+
+/* Rating system */
+.rating-container {
+  color: var(--light-text);
+}
+
+.rating-stars i {
+  color: #555;
+}
+
+.rating-stars span.hover i,
+.rating-stars span.active i {
+  color: var(--orange-primary);
+}
+
+.like-button {
+  background: transparent;
+  border: 1px solid var(--orange-primary);
+  color: var(--light-text);
+}
+
+.like-button:hover {
+  background-color: rgba(255, 107, 0, 0.1);
+}
+
+.like-button.liked {
+  background-color: rgba(255, 107, 0, 0.2);
+}
+
+.like-button.liked i {
+  color: var(--orange-primary);
+}
+
+/* Load more button */
+.load-more-btn {
+  background-color: var(--orange-primary);
+  color: var(--dark-bg);
+}
+
+.load-more-btn:hover {
+  background-color: var(--orange-secondary);
+}
+
+/* Tool specs */
+.spec-category h4 {
+  color: var(--orange-primary);
+}
+
+.spec-category ul li {
+  color: var(--grey-text);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--orange-dark);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--orange-primary);
+}

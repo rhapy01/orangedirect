@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools - Orange Dynasty Directory</title>
+
+    <link rel="stylesheet" href="utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ratings.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">ORANGE DIRECTORY</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dapps.html">dApps</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="tools.html" class="active">Tools</a></li>
+                    <li><a href="utilities.html">Utilities</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="directory-page">
+        <div class="container">
+            <h1 data-aos="fade-up">Tools</h1>
+            <p class="section-desc" data-aos="fade-up" data-aos-delay="100">
+                Explore a collection of powerful tools built by Orange Dynasty members to simplify blockchain development, analysis, and interaction. From blockchain explorers to wallet integration solutions, find the right tools to enhance your projects.
+            </p>
+
+            <!-- Featured Tool -->
+            <div class="featured-tool" data-aos="fade-up" data-aos-delay="200">
+                <div class="featured-badge">Featured Tool</div>
+                <div class="featured-content">
+                    <div class="featured-image">
+                        <img src="images/tools/sign-calendar.jpg" alt="Sign Calendar">
+                        <div class="play-video">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="featured-info">
+                        <h2 class="featured-title">Sign Calendar</h2>
+                        <p class="featured-description">
+                            A public tool to view and organize Orange Dynasty community events including Twitter Spaces, OG orange hour, calls, syncs, and IRL events. Created by the Orange Dynasty community.
+                        </p>
+                        <div class="tool-specs">
+                            <div class="spec-category">
+                                <h4><i class="fas fa-cogs"></i> Features</h4>
+                                <ul>
+                                    <li>Community event organization</li>
+                                    <li>Twitter Spaces integration</li>
+                                    <li>OG orange hour scheduling</li>
+                                    <li>Sync and call management</li>
+                                    <li>IRL event coordination</li>
+                                </ul>
+                            </div>
+                            <div class="spec-category">
+                                <h4><i class="fas fa-check-circle"></i> Benefits</h4>
+                                <ul>
+                                    <li>Centralized event calendar</li>
+                                    <li>Easy-to-use interface</li>
+                                    <li>Community-focused design</li>
+                                    <li>Mobile-responsive layout</li>
+                                    <li>Real-time updates</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">NodeJS</span>
+                            <span class="tech-tag">ExpressJS</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="tool-links">
+                            <a href="https://sign-calendar.vercel.app" class="btn primary" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Visit Website</a>
+                            <a href="https://x.com/OXISRAFIL" class="btn secondary" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i> Creator</a>
+                            <a href="#" class="btn accent"><i class="fas fa-calendar-alt"></i> Events</a>
+                        </div>
+                        <div class="tool-interactions">
+                            <div class="rating-container" data-app-id="sign-calendar">
+                                <div class="rating-title">Rate this tool:</div>
+                                <div class="rating-stars">
+                                    <span data-value="1"><i class="far fa-star"></i></span>
+                                    <span data-value="2"><i class="far fa-star"></i></span>
+                                    <span data-value="3"><i class="far fa-star"></i></span>
+                                    <span data-value="4"><i class="far fa-star"></i></span>
+                                    <span data-value="5"><i class="far fa-star"></i></span>
+                                    <span class="rating-value">0.0</span>
+                                </div>
+                            </div>
+                            <div class="like-container">
+                                <button class="like-button" data-app-id="sign-calendar">
+                                    <i class="far fa-thumbs-up"></i> Like <span class="like-count">0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="filters" data-aos="fade-up">
+                <div class="search-container">
+                    <input type="text" id="toolSearch" placeholder="Search tools...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="filter-options">
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="explorer">Explorers</option>
+                        <option value="wallet">Wallet Tools</option>
+                        <option value="analytics">Analytics</option>
+                        <option value="development">Development</option>
+                        <option value="security">Security</option>
+                        <option value="community">Community</option>
+                    </select>
+                    <select id="techFilter">
+                        <option value="all">All Technologies</option>
+                        <option value="react">React</option>
+                        <option value="node">Node.js</option>
+                        <option value="python">Python</option>
+                        <option value="rust">Rust</option>
+                        <option value="solidity">Solidity</option>
+                        <option value="func">FUNC</option>
+                        <option value="tact">TACT</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Tools Grid -->
+            <div class="tools-grid" id="toolsGrid">
+                <!-- Tool 1 -->
+                <div class="tool-card" data-aos="fade-up" data-category="wallet" data-tech="func,tact,javascript">
+                    <div class="tool-logo">
+                        <img src="images/tools/sign-sbt-tracker.jpg" alt="Sign SBT Tracker">
+                    </div>
+                    <div class="tool-info">
+                        <h3 class="tool-title">Sign SBT Tracker</h3>
+                        <p class="tool-description">
+                            This tool is used to check wallet addresses if they hold the sought-after SIGN SBTs for ownership. Built by Project Sign Verse.
+                        </p>
+                        <div class="tool-tech-stack">
+                            <span class="tech-tag">FUNC</span>
+                            <span class="tech-tag">TACT</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                        <div class="tool-links">
+                            <a href="#" class="link-btn" title="Launch Tool"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="link-btn" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://orangedirect.xyz/tools/sbt-tracker" class="link-btn" title="Project Page" target="_blank" rel="noopener noreferrer"><i class="fas fa-info-circle"></i></a>
+                        </div>
+                        <div class="tool-interactions">
+                            <div class="rating-container" data-app-id="sign-sbt-tracker">
+                                <div class="rating-title">Rate:</div>
+                                <div class="rating-stars">
+                                    <span data-value="1"><i class="far fa-star"></i></span>
+                                    <span data-value="2"><i class="far fa-star"></i></span>
+                                    <span data-value="3"><i class="far fa-star"></i></span>
+                                    <span data-value="4"><i class="far fa-star"></i></span>
+                                    <span data-value="5"><i class="far fa-star"></i></span>
+                                    <span class="rating-value">0.0</span>
+                                </div>
+                            </div>
+                            <div class="like-container">
+                                <button class="like-button" data-app-id="sign-sbt-tracker">
+                                    <i class="far fa-thumbs-up"></i> Like <span class="like-count">0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tool 2 -->
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="100" data-category="analytics" data-tech="python,react">
+                    <div class="tool-logo">
+                        <img src="images/tools/defi-analyzer.jpg" alt="DeFi Analyzer">
+                    </div>
+                    <div class="tool-info">
+                        <h3 class="tool-title">DeFi Analyzer</h3>
+                        <p class="tool-description">
+                            Advanced analytics platform for DeFi protocols. Track yields, impermanent loss, and optimize your positions across multiple protocols.
+                        </p>
+                        <div class="tool-tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TensorFlow</span>
+                        </div>
+                        <div class="tool-links">
+                            <a href="#" class="link-btn" title="Launch Tool"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="link-btn" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://orangedirect.xyz/tools/defi-analyzer" class="link-btn" title="Project Page" target="_blank" rel="noopener noreferrer"><i class="fas fa-info-circle"></i></a>
+                        </div>
+                        <div class="tool-interactions">
+                            <div class="rating-container" data-app-id="defi-analyzer">
+                                <div class="rating-title">Rate:</div>
+                                <div class="rating-stars">
+                                    <span data-value="1"><i class="far fa-star"></i></span>
+                                    <span data-value="2"><i class="far fa-star"></i></span>
+                                    <span data-value="3"><i class="far fa-star"></i></span>
+                                    <span data-value="4"><i class="far fa-star"></i></span>
+                                    <span data-value="5"><i class="far fa-star"></i></span>
+                                    <span class="rating-value">0.0</span>
+                                </div>
+                            </div>
+                            <div class="like-container">
+                                <button class="like-button" data-app-id="defi-analyzer">
+                                    <i class="far fa-thumbs-up"></i> Like <span class="like-count">0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tool 3 -->
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="200" data-category="development" data-tech="solidity,javascript">
+                    <div class="tool-logo">
+                        <img src="images/tools/smart-contract-generator.jpg" alt="Smart Contract Generator">
+                    </div>
+                    <div class="tool-info">
+                        <h3 class="tool-title">Smart Contract Generator</h3>
+                        <p class="tool-description">
+                            Visually create and deploy smart contracts without writing code. Includes templates for tokens, NFTs, and governance systems.
+                        </p>
+                        <div class="tool-tech-stack">
+                            <span class="tech-tag">Solidity</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Truffle</span>
+                        </div>
+                        <div class="tool-links">
+                            <a href="#" class="link-btn" title="Launch Tool"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="link-btn" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://orangedirect.xyz/tools/contract-generator" class="link-btn" title="Project Page" target="_blank" rel="noopener noreferrer"><i class="fas fa-info-circle"></i></a>
+                        </div>
+                        <div class="tool-interactions">
+                            <div class="rating-container" data-app-id="smart-contract-generator">
+                                <div class="rating-title">Rate:</div>
+                                <div class="rating-stars">
+                                    <span data-value="1"><i class="far fa-star"></i></span>
+                                    <span data-value="2"><i class="far fa-star"></i></span>
+                                    <span data-value="3"><i class="far fa-star"></i></span>
+                                    <span data-value="4"><i class="far fa-star"></i></span>
+                                    <span data-value="5"><i class="far fa-star"></i></span>
+                                    <span class="rating-value">0.0</span>
+                                </div>
+                            </div>
+                            <div class="like-container">
+                                <button class="like-button" data-app-id="smart-contract-generator">
+                                    <i class="far fa-thumbs-up"></i> Like <span class="like-count">0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tool 4 -->
+                <div class="tool-card" data-aos="fade-up" data-category="security" data-tech="rust,python">
+                    <div class="tool-logo">
+                        <img src="images/tools/blockchain-security-scanner.jpg" alt="Blockchain Security Scanner">
+                    </div>
+                    <div class="tool-info">
+                        <h3 class="tool-title">Blockchain Security Scanner</h3>
+                        <p class="tool-description">
+                            Comprehensive security analysis tool for smart contracts and dApps. Identify vulnerabilities before deployment.
+                        </p>
+                        <div class="tool-tech-stack">
+                            <span class="tech-tag">Rust</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Solidity</span>
+                        </div>
+                        <div class="tool-links">
+                            <a href="#" class="link-btn" title="Launch Tool"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="link-btn" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://orangedirect.xyz/tools/security-scanner" class="link-btn" title="Project Page" target="_blank" rel="noopener noreferrer"><i class="fas fa-info-circle"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tool 5 -->
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="100" data-category="explorer" data-tech="node,graphql">
+                    <div class="tool-logo">
+                        <img src="images/tools/token-tracker.jpg" alt="Token Tracker">
+                    </div>
+                    <div class="tool-info">
+                        <h3 class="tool-title">Token Tracker</h3>
+                        <p class="tool-description">
+                            Real-time monitoring of token transfers, holdings, and price movements. Set alerts for specific tokens or addresses.
+                        </p>
+                        <div class="tool-tech-stack">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">GraphQL</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="tool-links">
+                            <a href="#" class="link-btn" title="Launch Tool"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="link-btn" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://orangedirect.xyz/tools/token-tracker" class="link-btn" title="Project Page" target="_blank" rel="noopener noreferrer"><i class="fas fa-info-circle"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tool 6 -->
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="200" data-category="development" data-tech="javascript,react">
+                    <div class="tool-logo">
+                        <img src="images/tools/blockchain-simulator.jpg" alt="Blockchain Simulator">
+                    </div>
+                    <div class="tool-info">
+                        <h3 class="tool-title">Blockchain Simulator</h3>
+                        <p class="tool-description">
+                            Visual blockchain simulator for education and development testing. Create custom networks and scenarios.
+                        </p>
+                        <div class="tool-tech-stack">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Three.js</span>
+                        </div>
+                        <div class="tool-links">
+                            <a href="#" class="link-btn" title="Launch Tool"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="link-btn" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://orangedirect.xyz/tools/blockchain-simulator" class="link-btn" title="Project Page" target="_blank" rel="noopener noreferrer"><i class="fas fa-info-circle"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tool 7: Sign Calendar -->
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="100" data-category="community" data-tech="javascript,nodejs,mongodb">
+                    <div class="tool-logo">
+                        <img src="images/tools/sign-calendar.jpg" alt="Sign Calendar">
+                    </div>
+                    <div class="tool-info">
+                        <h3 class="tool-title">Sign Calendar</h3>
+                        <p class="tool-description">
+                            A public tool to view and organize Orange Dynasty community events including Twitter Spaces, OG orange hour, calls, syncs, and IRL events.
+                        </p>
+                        <div class="tool-tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">NodeJS</span>
+                            <span class="tech-tag">ExpressJS</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="tool-links">
+                            <a href="#" class="link-btn" title="Launch Tool"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="link-btn" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://orangedirect.xyz/tools/sign-calendar" class="link-btn" title="Project Page" target="_blank" rel="noopener noreferrer"><i class="fas fa-info-circle"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container" data-aos="fade-up">
+                <button class="load-more-btn" id="loadMoreBtn">Load More</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>Orange Dynasty</h3>
+                    <p>Building the future of blockchain technology, one block at a time. Join our growing community of developers, designers, and blockchain enthusiasts.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="dapps.html">dApps</a></li>
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="tools.html">Tools</a></li>
+                        <li><a href="utilities.html">Utilities</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter to stay informed about the latest tools and updates.</p>
+                    <form action="#" method="post">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Orange Dynasty. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Socket.io for real-time updates -->
+    <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+    <!-- Include ratings scripts -->
+    <script src="js/ratings.js"></script>
+    <script src="js/ensure-all-ratings.js"></script>
+    <script src="js/real-time-ratings.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Mobile Navigation Toggle
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        
+        mobileNavToggle.addEventListener('click', function() {
+            mobileNavToggle.classList.toggle('active');
+            mainNav.classList.toggle('active');
+        });
+
+        // Load More Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            
+            // Simulating load more functionality
+            loadMoreBtn.addEventListener('click', function() {
+                // Code to load more tools
+                alert('Load more functionality will be implemented here');
+            });
+            
+            // Search Input
+            const searchInput = document.getElementById('toolSearch');
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                const toolCards = document.querySelectorAll('.tool-card');
+                
+                toolCards.forEach(card => {
+                    const title = card.querySelector('.tool-title').textContent.toLowerCase();
+                    const description = card.querySelector('.tool-description').textContent.toLowerCase();
+                    
+                    if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+            
+            // Category Filter
+            const categoryFilter = document.getElementById('categoryFilter');
+            categoryFilter.addEventListener('change', function() {
+                const category = this.value;
+                const toolCards = document.querySelectorAll('.tool-card');
+                
+                toolCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+            
+            // Tech Filter
+            const techFilter = document.getElementById('techFilter');
+            techFilter.addEventListener('change', function() {
+                const tech = this.value;
+                const toolCards = document.querySelectorAll('.tool-card');
+                
+                toolCards.forEach(card => {
+                    if (tech === 'all') {
+                        card.style.display = 'block';
+                    } else {
+                        const techStack = card.dataset.tech.split(',');
+                        if (techStack.includes(tech)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

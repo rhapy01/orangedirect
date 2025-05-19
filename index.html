@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange Directory | Orange Dynasty</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Add AOS library for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Rating system styles -->
+    <link rel="stylesheet" href="css/ratings.css">
+    <!-- Dark theme styles -->
+    <link rel="stylesheet" href="css/dark-theme.css">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div class="grid-overlay"></div>
+    <header class="header">
+        <div class="container">
+            <div class="logo" style="display: flex; align-items: center; padding: 10px;">
+                <a href="index.html" style="display: flex; align-items: center; gap: 10px;">
+                    <img src="images/logo.png" alt="Orange Dynasty Logo" width="40" height="40" class="logo-img" style="width: 40px !important; height: 40px !important; min-width: 40px !important; min-height: 40px !important; object-fit: contain;">
+                    <span class="logo-text">ORANGE DIRECTORY</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="dapps.html">dApps</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="utilities.html">Utilities</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="blockchain-badge">DIRECTORY OF ORANGE DYNASTY PROJECTS</div>
+                <h1>Orange Dynasty Directory</h1>
+                <p>Discover dapps, games, tools, and utilities built by the Orange Dynasty community</p>
+                <div class="cta-buttons">
+                    <a href="https://t.me/OrangeDynasty" target="_blank" rel="noopener" class="btn secondary">Join Community</a>
+                    <a href="submit-project.html" class="btn accent">Submit a Project</a>
+                </div>
+            </div>
+            <div class="blockchain-particles" id="particles-js"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section" style="text-align: center;">
+        <div class="container">
+            <h2 data-aos="fade-up" style="display: block; text-align: center; position: static; left: auto; transform: none; width: 100%;">About Orange Directory</h2>
+            <div class="about-content" data-aos="fade-up" data-aos-delay="100" style="text-align: center; display: block;">
+                <div class="about-message" style="max-width: 800px; margin: 0 auto 30px;">
+                    <div class="organizer-message" style="justify-content: center;">
+                        <div class="organizer-avatar">
+                            <img src="img/founder-avatar.jpg" alt="Founder">
+                        </div>
+                        <div class="organizer-info">
+                            <h3>Orange Directory</h3>
+                            <p class="organizer-title">Orange Dynasty Project Showcase</p>
+                        </div>
+                    </div>
+                    <div class="message-content" style="text-align: center;">
+                        <p>Welcome to the Orange Directory - where Sign's community shines!</p>
+                        <p>"The Orange Directory is a place to discover projects built by people striving to be the best version of themselves through building platforms and making genuine connections." - <span class="highlight">@sign on Twitter</span></p>
+                        <p>The Orange Dynasty is the Sign Community - ecosystem supporters and community members, currently about 800,000 strong and growing daily, who have been developing amazing projects that deserve to be showcased.</p>
+                        <p>Being the best version of yourself means beating odds daily, setting goals, reaching them, and achieving status. These developers and creators aren't from yesterday. They do what they know best - sincerely and innovatively. Community members around the world have been developing various tools, games, and dapps to showcase how they are beating all odds to become the best version of themselves.</p>
+                        <p>This Orange Directory exists to bring together all those amazing and beautiful initiatives so everyone can access and use any of these developments, having a place where users can find genuine links and information about each project being carried out.</p>
+                        <p>This world is unfathomable, and the testimony of how these community members became the best version of themselves is worthy of emulation. We encourage all users to engage and follow these developers, mindset growers, product designers, game developers, and more on social platforms to support them.</p>
+                        <p>Find out more about Sign Protocol at <a href="https://sign.global" target="_blank" rel="noopener" class="highlight">sign.global</a> and follow on <a href="https://x.com/sign" target="_blank" rel="noopener" class="highlight">X</a>.</p>
+                        <p class="signature">IsaacXVanguard welcomes every visitor.</p>
+                    </div>
+                </div>
+                <div class="about-stats" data-aos="fade-up" data-aos-delay="200" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
+                    <div class="stat" style="width: 180px; margin: 10px;">
+                        <span class="stat-number">800K+</span>
+                        <span class="stat-label">Community Members</span>
+                    </div>
+                    <div class="stat" style="width: 180px; margin: 10px;">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat" style="width: 180px; margin: 10px;">
+                        <span class="stat-number">30+</span>
+                        <span class="stat-label">Countries</span>
+                    </div>
+                    <div class="stat" style="width: 180px; margin: 10px;">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Active Contributors</span>
+                    </div>
+                    <div class="stat" style="width: 180px; margin: 10px;">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Blockchains</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dapps" class="category-section">
+        <div class="container">
+            <div class="category-icon" data-aos="fade-up">
+                <i class="fas fa-cubes"></i>
+            </div>
+            <h2 data-aos="fade-up" data-aos-delay="100">Decentralized Applications</h2>
+            <p class="category-desc" data-aos="fade-up" data-aos-delay="200">Explore decentralized applications built by Orange Dynasty members. These dapps showcase how their creators are becoming the best versions of themselves, creating solutions that confirm and certify the validity of claims through digitally signed structured data.</p>
+            <a href="dapps.html" class="btn accent" data-aos="fade-up" data-aos-delay="300">Explore Dapps</a>
+        </div>
+    </section>
+
+    <section id="games" class="category-section">
+        <div class="container">
+            <div class="category-icon" data-aos="fade-up">
+                <i class="fas fa-gamepad"></i>
+            </div>
+            <h2 data-aos="fade-up" data-aos-delay="100">Games</h2>
+            <p class="category-desc" data-aos="fade-up" data-aos-delay="200">Discover blockchain games developed by Orange Dynasty members. These games demonstrate how developers are beating the odds to create innovative gaming experiences that leverage attestation technology, verifying achievements, ownership, and player reputation while enabling new forms of trust-based gameplay.</p>
+            <a href="games.html" class="btn accent" data-aos="fade-up" data-aos-delay="300">Explore Games</a>
+        </div>
+    </section>
+
+    <section id="tools" class="category-section">
+        <div class="container">
+            <div class="category-icon" data-aos="fade-up">
+                <i class="fas fa-tools"></i>
+            </div>
+            <h2 data-aos="fade-up" data-aos-delay="100">Tools</h2>
+            <p class="category-desc" data-aos="fade-up" data-aos-delay="200">Access powerful tools built by Orange Dynasty members. These tools showcase their creators' dedication to sincerity and innovation, creating attestation explorers, indexers, clients, and API frameworks that help others become the best version of themselves.</p>
+            <a href="tools.html" class="btn accent" data-aos="fade-up" data-aos-delay="300">Explore Tools</a>
+        </div>
+    </section>
+
+    <section id="utilities" class="category-section">
+        <div class="container">
+            <div class="category-icon" data-aos="fade-up">
+                <i class="fas fa-plug"></i>
+            </div>
+            <h2 data-aos="fade-up" data-aos-delay="100">Utilities</h2>
+            <p class="category-desc" data-aos="fade-up" data-aos-delay="200">Browse utilities created by Orange Dynasty members. From cross-chain attestation services to ZK attestation tools, these utilities demonstrate how developers are setting and achieving goals, creating applications for credit scoring, reward distribution, reputation systems, and more.</p>
+            <a href="utilities.html" class="btn accent" data-aos="fade-up" data-aos-delay="300">Explore Utilities</a>
+        </div>
+    </section>
+
+    <section id="community" class="community-section">
+        <div class="container">
+            <h2 data-aos="fade-up">Join Sign Global Community</h2>
+            <div class="community-grid">
+                <div class="community-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="community-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <h3>Telegram</h3>
+                    <p>Join 17,000+ Orange Dynasty members on Telegram for real-time discussions, exclusive announcements, and direct access to project creators.</p>
+                    <a href="https://t.me/OrangeDynasty" target="_blank" rel="noopener" class="btn primary">Join Telegram</a>
+                </div>
+                <div class="community-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="community-icon">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <h3>Discord</h3>
+                    <p>Connect with 65,000+ builders, creators, and enthusiasts in our Discord server with dedicated channels for each project category.</p>
+                    <a href="https://discord.com/invite/skA5fkqVwT" target="_blank" rel="noopener" class="btn primary">Join Discord</a>
+                </div>
+                <div class="community-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="community-icon">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <h3>Twitter</h3>
+                    <p>Follow us on Twitter where we highlight projects, share updates, and amplify the voices of 45,000+ Orange Dynasty community members.</p>
+                    <a href="https://twitter.com/sign" target="_blank" rel="noopener" class="btn primary">Follow on Twitter</a>
+                </div>
+                <div class="community-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="community-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>Join 500+ developers contributing to open-source projects. Access repositories, collaborate on code, and help build the future of the ecosystem.</p>
+                    <a href="https://github.com/OrangeDynasty" target="_blank" rel="noopener" class="btn primary">View GitHub</a>
+                </div>
+            </div>
+            
+            <div class="community-stats" data-aos="fade-up">
+                <div class="stat-counter">
+                    <span class="stat-number">800K+</span>
+                    <span class="stat-label">Community Members</span>
+                </div>
+                <div class="stat-counter">
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">Active Projects</span>
+                </div>
+                <div class="stat-counter">
+                    <span class="stat-number">30+</span>
+                    <span class="stat-label">Countries Represented</span>
+                </div>
+                <div class="stat-counter">
+                    <span class="stat-number">12K+</span>
+                    <span class="stat-label">Daily Active Users</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>Orange Dynasty</h3>
+                    <p>Building the future of blockchain technology, one block at a time. Join our growing community of developers, designers, and blockchain enthusiasts.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="dapps.html">dApps</a></li>
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="tools.html">Tools</a></li>
+                        <li><a href="utilities.html">Utilities</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for the latest additions to the directory.</p>
+                    <form action="#" method="post">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Orange Dynasty. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Socket.io for real-time updates -->
+    <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+    <!-- Include ratings scripts -->
+    <script src="js/ratings.js"></script>
+    <script src="js/ensure-all-ratings.js"></script>
+    <script src="js/real-time-ratings.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        // Initialize particles.js
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#ff7a00" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#ff7a00",
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: "none",
+                    random: true,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: { enable: true, mode: "grab" },
+                    onclick: { enable: true, mode: "push" },
+                    resize: true
+                },
+                modes: {
+                    grab: { distance: 140, line_linked: { opacity: 1 } },
+                    push: { particles_nb: 4 }
+                }
+            },
+            retina_detect: true
+        });
+        
+        // Mobile menu toggle
+        const mobileToggle = document.querySelector('.mobile-nav-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        
+        mobileToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            mainNav.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+        });
+    </script>
+</body>
+</html>

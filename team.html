@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team - Orange Directory</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Team Page Styles */
+        .team-page {
+            padding: 120px 0 80px;
+            min-height: 100vh;
+            background-color: var(--dark-bg);
+        }
+
+        .team-page h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--light-text);
+            font-family: 'Space Mono', monospace;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .section-desc {
+            font-size: 1.1rem;
+            color: var(--light-text);
+            margin-bottom: 40px;
+            max-width: 800px;
+            line-height: 1.6;
+            font-weight: 500;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .team-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 20px;
+            border: 4px solid var(--orange-primary);
+        }
+
+        .team-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .team-name {
+            font-size: 1.8rem;
+            color: var(--dark-text);
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .team-title {
+            font-size: 1.2rem;
+            color: var(--orange-dark);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .team-role {
+            font-size: 0.95rem;
+            color: var(--dark-text);
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .team-bio {
+            color: var(--dark-text);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .team-social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .team-social a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--orange-dark);
+            color: var(--light-text);
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .team-social a:hover {
+            background-color: var(--orange-primary);
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">ORANGE DIRECTORY</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dapps.html">dApps</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="utilities.html">Utilities</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="team.html" class="active">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="team-page">
+        <div class="container">
+            <h1 data-aos="fade-up">Our Team</h1>
+            <p class="section-desc" data-aos="fade-up" data-aos-delay="100">
+                Meet the dedicated individuals behind the Orange Directory. Our diverse team brings together expertise in blockchain technology, development, design, and community building to create a platform that showcases the best projects in the Orange ecosystem.
+            </p>
+
+            <!-- Team Grid -->
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-card" data-aos="fade-up">
+                    <div class="team-avatar">
+                        <img src="img/team/devemah.jpg" alt="Devemah">
+                    </div>
+                    <h3 class="team-name">Devemah</h3>
+                    <div class="team-title">The Vanguard</div>
+                    <div class="team-role">Project Manager & Global Community Lead</div>
+                    <p class="team-bio">
+                        The mastermind and driving force behind Orange Dynasty. Devemah leads the vision, strategy, and expansion, ensuring the project remains at the forefront of SIGN's ecosystem evolution.
+                    </p>
+                    <div class="team-social">
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-avatar">
+                        <img src="img/team/isaac.jpg" alt="Isaac">
+                    </div>
+                    <h3 class="team-name">IsaacXVanguard</h3>
+                    <div class="team-title">The Architect</div>
+                    <div class="team-role">Lead Developer & Technical Director</div>
+                    <p class="team-bio">
+                        Technical visionary with extensive blockchain expertise. Isaac oversees all technical aspects of the Orange Directory, implementing innovative solutions and ensuring platform stability.
+                    </p>
+                    <div class="team-social">
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-avatar">
+                        <img src="img/team/sign.jpg" alt="Sign">
+                    </div>
+                    <h3 class="team-name">Sign</h3>
+                    <div class="team-title">The Visionary</div>
+                    <div class="team-role">Founder & Strategic Advisor</div>
+                    <p class="team-bio">
+                        The creator of the Sign Protocol and inspiration behind the Orange ecosystem. Sign provides strategic guidance and ensures the directory aligns with the core mission of the protocol.
+                    </p>
+                    <div class="team-social">
+                        <a href="https://x.com/sign" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="team-card" data-aos="fade-up">
+                    <div class="team-avatar">
+                        <img src="img/team/sophia.jpg" alt="Sophia">
+                    </div>
+                    <h3 class="team-name">Sophia</h3>
+                    <div class="team-title">The Curator</div>
+                    <div class="team-role">Content Manager & Project Reviewer</div>
+                    <p class="team-bio">
+                        Expert in blockchain project evaluation and curation. Sophia ensures all projects featured in the Orange Directory meet quality standards and provide value to the community.
+                    </p>
+                    <div class="team-social">
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Team Member 5 -->
+                <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-avatar">
+                        <img src="img/team/marco.jpg" alt="Marco">
+                    </div>
+                    <h3 class="team-name">Marco</h3>
+                    <div class="team-title">The Artist</div>
+                    <div class="team-role">UI/UX Designer & Creative Director</div>
+                    <p class="team-bio">
+                        Innovative designer with a passion for creating intuitive and visually stunning interfaces. Marco is responsible for the aesthetic and user experience of the Orange Directory.
+                    </p>
+                    <div class="team-social">
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Team Member 6 -->
+                <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-avatar">
+                        <img src="img/team/lina.jpg" alt="Lina">
+                    </div>
+                    <h3 class="team-name">Lina</h3>
+                    <div class="team-title">The Connector</div>
+                    <div class="team-role">Outreach & Community Relations</div>
+                    <p class="team-bio">
+                        Skilled networker and community builder. Lina bridges the gap between developers and users, fostering connections and ensuring the community's voice is heard in the development process.
+                    </p>
+                    <div class="team-social">
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>Orange Directory</h3>
+                    <p>Building the future of blockchain technology, one block at a time. Join our growing community of developers, designers, and blockchain enthusiasts.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="dapps.html">dApps</a></li>
+                        <li><a href="tools.html">Tools</a></li>
+                        <li><a href="utilities.html">Utilities</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for the latest additions to the directory.</p>
+                    <form action="#" method="post">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Orange Directory. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Mobile Navigation Toggle
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        
+        mobileNavToggle.addEventListener('click', function() {
+            mobileNavToggle.classList.toggle('active');
+            mainNav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html> 

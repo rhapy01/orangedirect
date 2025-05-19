@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - Orange Dynasty Directory</title>
+    <link rel="stylesheet" href="games.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ratings.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo" style="display: flex; align-items: center; padding: 10px;">
+                <a href="index.html" style="display: flex; align-items: center; gap: 10px;">
+                    <img src="images/logo.png" alt="Orange Dynasty Logo" width="40" height="40" class="logo-img" style="width: 40px !important; height: 40px !important; min-width: 40px !important; min-height: 40px !important; object-fit: contain;">
+                    <span class="logo-text">ORANGE DIRECTORY</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dapps.html">dApps</a></li>
+                    <li><a href="games.html" class="active">Games</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="utilities.html">Utilities</a></li>
+
+
+                </ul>
+            </nav>
+            <div class="mobile-nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="directory-page">
+        <div class="container">
+            <h1 data-aos="fade-up">Games</h1>
+            <p class="section-desc" data-aos="fade-up" data-aos-delay="100">
+                Discover exciting blockchain games developed by Orange Dynasty members. From play-to-earn adventures to strategy games with NFT integration, explore a new dimension of gaming with blockchain technology.
+            </p>
+
+            <!-- Featured Game -->
+            <div class="featured-tool" data-aos="fade-up" data-aos-delay="200">
+                <div class="featured-badge">Featured Game</div>
+                <div class="featured-content">
+                    <div class="featured-image">
+                        <video width="100%" height="100%" poster="images/games/orange-dynasty-airforce.jpg" id="airforceVideo">
+                            <source src="video/arfc.mp4#t=0,60" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="play-video" id="playAirforceVideo">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="featured-info">
+                        <h2 class="featured-title">Orange Dynasty AirForce Game</h2>
+                        <p class="featured-description">
+                            An exciting aerial combat game where players control Orange Dynasty aircraft to complete missions and challenges. Experience thrilling dogfights and strategic gameplay in this community-developed title.
+                        </p>
+                        <div class="tool-specs">
+                            <div class="spec-category">
+                                <h4><i class="fas fa-gamepad"></i> Game Features</h4>
+                                <ul>
+                                    <li>Aerial combat gameplay</li>
+                                    <li>Multiple aircraft options</li>
+                                    <li>Mission-based challenges</li>
+                                    <li>Score leaderboards</li>
+                                    <li>Community events</li>
+                                </ul>
+                            </div>
+                            <div class="spec-category">
+                                <h4><i class="fas fa-trophy"></i> Rewards</h4>
+                                <ul>
+                                    <li>Achievement badges</li>
+                                    <li>Unlockable aircraft</li>
+                                    <li>Special missions</li>
+                                    <li>Skill progression</li>
+                                    <li>Community recognition</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                        <div class="tool-links">
+                            <a href="https://orange-dynasty-game.vercel.app" class="btn primary" target="_blank" rel="noopener noreferrer"><i class="fas fa-play-circle"></i> Play Now</a>
+                            <a href="https://x.com/oxisrafil" class="btn secondary" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i> Creator</a>
+                            <a href="#" class="btn accent"><i class="fas fa-trophy"></i> Leaderboard</a>
+                        </div>
+                        <div class="tool-interactions">
+                            <div class="rating-container" data-app-id="airforce-game">
+                                <div class="rating-title">Rate this game:</div>
+                                <div class="rating-stars">
+                                    <span data-value="1"><i class="far fa-star"></i></span>
+                                    <span data-value="2"><i class="far fa-star"></i></span>
+                                    <span data-value="3"><i class="far fa-star"></i></span>
+                                    <span data-value="4"><i class="far fa-star"></i></span>
+                                    <span data-value="5"><i class="far fa-star"></i></span>
+                                    <span class="rating-value">0.0</span>
+                                </div>
+                            </div>
+                            <div class="like-container">
+                                <button class="like-button" data-app-id="airforce-game">
+                                    <i class="far fa-thumbs-up"></i> Like <span class="like-count">0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="filters" data-aos="fade-up">
+                <div class="search-container">
+                    <input type="text" id="gameSearch" placeholder="Search games...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="filter-options">
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="rpg">RPG</option>
+                        <option value="strategy">Strategy</option>
+                        <option value="action">Action</option>
+                        <option value="card">Card Games</option>
+                        <option value="metaverse">Metaverse</option>
+                        <option value="puzzle">Puzzle</option>
+                    </select>
+                    <select id="platformFilter">
+                        <option value="all">All Platforms</option>
+                        <option value="browser">Browser</option>
+                        <option value="mobile">Mobile</option>
+                        <option value="desktop">Desktop</option>
+                        <option value="vr">VR/AR</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Games Grid -->
+            <div class="tools-grid" id="gamesGrid">
+                <!-- Game 1 -->
+                <div class="tool-card" data-aos="fade-up" data-category="puzzle" data-platform="browser,mobile">
+                    <div class="tool-logo">
+                        <img src="images/games/sign-2048-match.jpg" alt="SIGN 2048 Match">
+                    </div>
+                    <div class="tool-info">
+                        <h3 class="tool-title">SIGN 2048 Match</h3>
+                        <p class="tool-description">
+                            A fun and addictive puzzle game based on the classic 2048 concept, themed with Orange Dynasty elements. Match and combine tiles to reach higher numbers and achieve the highest score.
+                        </p>
+                        <div class="tool-tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="tool-links">
+                            <a href="https://orangedynasty2048.vercel.app" class="link-btn" title="Play Game" target="_blank" rel="noopener noreferrer"><i class="fas fa-play-circle"></i></a>
+                            <a href="https://x.com/oxisrafil" class="link-btn" title="Creator" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                            <a href="https://orangedirect.xyz/games/2048" class="link-btn" title="Project Page" target="_blank" rel="noopener noreferrer"><i class="fas fa-info-circle"></i></a>
+                        </div>
+                        <div class="tool-interactions">
+                            <div class="rating-container" data-app-id="sign-2048">
+                                <div class="rating-title">Rate:</div>
+                                <div class="rating-stars">
+                                    <span data-value="1"><i class="far fa-star"></i></span>
+                                    <span data-value="2"><i class="far fa-star"></i></span>
+                                    <span data-value="3"><i class="far fa-star"></i></span>
+                                    <span data-value="4"><i class="far fa-star"></i></span>
+                                    <span data-value="5"><i class="far fa-star"></i></span>
+                                    <span class="rating-value">0.0</span>
+                                </div>
+                            </div>
+                            <div class="like-container">
+                                <button class="like-button" data-app-id="sign-2048">
+                                    <i class="far fa-thumbs-up"></i> Like <span class="like-count">0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game 2 -->
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="100" data-category="puzzle" data-platform="browser,mobile">
+                    <div class="tool-logo">
+                        <img src="images/games/sign-candy-crush.jpg" alt="Sign Candy Crush">
+                    </div>
+                    <div class="tool-info">
+                        <h3 class="tool-title">Sign Candy Crush</h3>
+                        <p class="tool-description">
+                            A unique match-three puzzle game inspired by Candy Crush but featuring SIGN team members' customized profile pictures (PFPs) instead of candies. Match and swap PFPs to complete challenging levels.
+                        </p>
+                        <div class="tool-tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="tool-links">
+                            <a href="https://simple-custome-candycrush.vercel.app" class="link-btn" title="Play Game" target="_blank" rel="noopener noreferrer"><i class="fas fa-play-circle"></i></a>
+                            <a href="https://x.com/oxisrafil" class="link-btn" title="Creator" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                            <a href="https://orangedirect.xyz/games/candy-crush" class="link-btn" title="Project Page" target="_blank" rel="noopener noreferrer"><i class="fas fa-info-circle"></i></a>
+                        </div>
+                        <div class="tool-interactions">
+                            <div class="rating-container" data-app-id="sign-candy-crush">
+                                <div class="rating-title">Rate:</div>
+                                <div class="rating-stars">
+                                    <span data-value="1"><i class="far fa-star"></i></span>
+                                    <span data-value="2"><i class="far fa-star"></i></span>
+                                    <span data-value="3"><i class="far fa-star"></i></span>
+                                    <span data-value="4"><i class="far fa-star"></i></span>
+                                    <span data-value="5"><i class="far fa-star"></i></span>
+                                    <span class="rating-value">0.0</span>
+                                </div>
+                            </div>
+                            <div class="like-container">
+                                <button class="like-button" data-app-id="sign-candy-crush">
+                                    <i class="far fa-thumbs-up"></i> Like <span class="like-count">0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game 3 -->
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="200" data-category="puzzle" data-platform="browser,mobile">
+                    <div class="tool-logo">
+                        <video width="100%" height="100%" id="signWheelVideo" controls>
+                            <source src="video/wheel.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="tool-info">
+                        <h3 class="tool-title">Sign Wheel</h3>
+                        <p class="tool-description">
+                            A fun spinning wheel to help you make random decisions. Create your own customized wheel with various options, spin it, and let fate decide your choice in a visually engaging way.
+                        </p>
+                        <div class="tool-tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="tool-links">
+                            <a href="https://pickerwheel.com/?id=ftAXh" class="link-btn" title="Play Game" target="_blank" rel="noopener noreferrer"><i class="fas fa-play-circle"></i></a>
+                            <a href="https://x.com/frieren_sol_0" class="link-btn" title="Creator" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                            <a href="https://orangedirect.xyz/games/wheel" class="link-btn" title="Project Page" target="_blank" rel="noopener noreferrer"><i class="fas fa-info-circle"></i></a>
+                        </div>
+                        <div class="tool-interactions">
+                            <div class="rating-container" data-app-id="sign-wheel">
+                                <div class="rating-title">Rate:</div>
+                                <div class="rating-stars">
+                                    <span data-value="1"><i class="far fa-star"></i></span>
+                                    <span data-value="2"><i class="far fa-star"></i></span>
+                                    <span data-value="3"><i class="far fa-star"></i></span>
+                                    <span data-value="4"><i class="far fa-star"></i></span>
+                                    <span data-value="5"><i class="far fa-star"></i></span>
+                                    <span class="rating-value">0.0</span>
+                                </div>
+                            </div>
+                            <div class="like-container">
+                                <button class="like-button" data-app-id="sign-wheel">
+                                    <i class="far fa-thumbs-up"></i> Like <span class="like-count">0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game 4 -->
+                <div class="tool-card" data-aos="fade-up" data-category="puzzle" data-platform="browser,mobile">
+                    <div class="tool-logo">
+                        <video width="100%" height="100%" id="mastermindVideo" controls>
+                            <source src="video/mmind.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="tool-info">
+                        <h3 class="tool-title">Sign Mastermind</h3>
+                        <p class="tool-description">
+                            A unique puzzle game where players can upload their own images to play with. Test your logic and deduction skills in this modern take on the classic Mastermind game.
+                        </p>
+                        <div class="tool-tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="tool-links">
+                            <a href="https://sign-mastermind.vercel.app" class="link-btn" title="Play Game" target="_blank" rel="noopener noreferrer"><i class="fas fa-play-circle"></i></a>
+                            <a href="https://x.com/Princewarexy" class="link-btn" title="Creator 1" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                            <a href="https://x.com/ChrisGold__" class="link-btn" title="Creator 2" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                            <a href="https://orangedirect.xyz/games/mastermind" class="link-btn" title="Project Page" target="_blank" rel="noopener noreferrer"><i class="fas fa-info-circle"></i></a>
+                        </div>
+                        <div class="tool-interactions">
+                            <div class="rating-container" data-app-id="sign-mastermind">
+                                <div class="rating-title">Rate:</div>
+                                <div class="rating-stars">
+                                    <span data-value="1"><i class="far fa-star"></i></span>
+                                    <span data-value="2"><i class="far fa-star"></i></span>
+                                    <span data-value="3"><i class="far fa-star"></i></span>
+                                    <span data-value="4"><i class="far fa-star"></i></span>
+                                    <span data-value="5"><i class="far fa-star"></i></span>
+                                    <span class="rating-value">0.0</span>
+                                </div>
+                            </div>
+                            <div class="like-container">
+                                <button class="like-button" data-app-id="sign-mastermind">
+                                    <i class="far fa-thumbs-up"></i> Like <span class="like-count">0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game 5 -->
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="100" data-category="rpg" data-platform="browser,desktop">
+                    <div class="tool-logo">
+                        <img src="images/games/pixel-heroes.jpg" alt="Pixel Heroes">
+                    </div>
+                    <div class="tool-info">
+                        <h3 class="tool-title">Pixel Heroes</h3>
+                        <p class="tool-description">
+                            Retro-style RPG with pixel art graphics and blockchain integration. Collect heroes, embark on quests, and trade unique equipment on the marketplace.
+                        </p>
+                        <div class="tool-tech-stack">
+                            <span class="tech-tag">Phaser</span>
+                            <span class="tech-tag">Solana</span>
+                            <span class="tech-tag">Rust</span>
+                        </div>
+                        <div class="tool-links">
+                            <a href="#" class="link-btn" title="Play Game"><i class="fas fa-play-circle"></i></a>
+                            <a href="#" class="link-btn" title="Marketplace"><i class="fas fa-store"></i></a>
+                            <a href="https://orangedirect.xyz/games/pixel-heroes" class="link-btn" title="Project Page" target="_blank" rel="noopener noreferrer"><i class="fas fa-info-circle"></i></a>
+                        </div>
+                        <div class="tool-interactions">
+                            <div class="rating-container" data-app-id="pixel-heroes">
+                                <div class="rating-title">Rate:</div>
+                                <div class="rating-stars">
+                                    <span data-value="1"><i class="far fa-star"></i></span>
+                                    <span data-value="2"><i class="far fa-star"></i></span>
+                                    <span data-value="3"><i class="far fa-star"></i></span>
+                                    <span data-value="4"><i class="far fa-star"></i></span>
+                                    <span data-value="5"><i class="far fa-star"></i></span>
+                                    <span class="rating-value">0.0</span>
+                                </div>
+                            </div>
+                            <div class="like-container">
+                                <button class="like-button" data-app-id="pixel-heroes">
+                                    <i class="far fa-thumbs-up"></i> Like <span class="like-count">0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game 6 -->
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="200" data-category="strategy" data-platform="mobile,desktop">
+                    <div class="tool-logo">
+                        <img src="images/games/token-tactics.jpg" alt="Token Tactics">
+                    </div>
+                    <div class="tool-info">
+                        <h3 class="tool-title">Token Tactics</h3>
+                        <p class="tool-description">
+                            Turn-based strategy game with blockchain-powered armies. Every unit is an NFT with unique attributes and abilities that evolve with victories.
+                        </p>
+                        <div class="tool-tech-stack">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">Polygon</span>
+                            <span class="tech-tag">ERC-721</span>
+                        </div>
+                        <div class="tool-links">
+                            <a href="#" class="link-btn" title="Play Game"><i class="fas fa-play-circle"></i></a>
+                            <a href="#" class="link-btn" title="Marketplace"><i class="fas fa-store"></i></a>
+                            <a href="https://orangedirect.xyz/games/token-tactics" class="link-btn" title="Project Page" target="_blank" rel="noopener noreferrer"><i class="fas fa-info-circle"></i></a>
+                        </div>
+                        <div class="tool-interactions">
+                            <div class="rating-container" data-app-id="token-tactics">
+                                <div class="rating-title">Rate:</div>
+                                <div class="rating-stars">
+                                    <span data-value="1"><i class="far fa-star"></i></span>
+                                    <span data-value="2"><i class="far fa-star"></i></span>
+                                    <span data-value="3"><i class="far fa-star"></i></span>
+                                    <span data-value="4"><i class="far fa-star"></i></span>
+                                    <span data-value="5"><i class="far fa-star"></i></span>
+                                    <span class="rating-value">0.0</span>
+                                </div>
+                            </div>
+                            <div class="like-container">
+                                <button class="like-button" data-app-id="token-tactics">
+                                    <i class="far fa-thumbs-up"></i> Like <span class="like-count">0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container" data-aos="fade-up">
+                <button class="load-more-btn" id="loadMoreBtn">Load More</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>Orange Dynasty</h3>
+                    <p>Building the future of blockchain technology, one block at a time. Join our growing community of developers, designers, and blockchain enthusiasts.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="dapps.html">dApps</a></li>
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="tools.html">Tools</a></li>
+                        <li><a href="utilities.html">Utilities</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter to stay informed about the latest games and updates.</p>
+                    <form action="#" method="post">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Orange Dynasty. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Socket.io for real-time updates -->
+    <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+    <!-- Include ratings scripts -->
+    <script src="js/ratings.js"></script>
+    <script src="js/ensure-all-ratings.js"></script>
+    <script src="js/real-time-ratings.js"></script>
+    
+    <script>
+        // Featured Video Player
+        const playButton = document.getElementById('playAirforceVideo');
+        const airforceVideo = document.getElementById('airforceVideo');
+        
+        if (playButton && airforceVideo) {
+            playButton.addEventListener('click', function() {
+                if (airforceVideo.paused) {
+                    airforceVideo.play();
+                    playButton.innerHTML = '<i class="fas fa-pause"></i>';
+                } else {
+                    airforceVideo.pause();
+                    playButton.innerHTML = '<i class="fas fa-play"></i>';
+                }
+            });
+            
+            airforceVideo.addEventListener('ended', function() {
+                playButton.innerHTML = '<i class="fas fa-play"></i>';
+            });
+        }
+        
+        // Sign Wheel Video Player
+        const playSignWheelButton = document.getElementById('playSignWheelVideo');
+        const signWheelVideo = document.getElementById('signWheelVideo');
+        
+        if (playSignWheelButton && signWheelVideo) {
+            // Hide the play button when video has controls
+            playSignWheelButton.style.display = 'none';
+            
+            // Additional event listener for the video itself
+            signWheelVideo.addEventListener('click', function() {
+                if (signWheelVideo.paused) {
+                    signWheelVideo.play();
+                } else {
+                    signWheelVideo.pause();
+                }
+            });
+        }
+        
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Mobile Navigation Toggle
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        
+        mobileNavToggle.addEventListener('click', function() {
+            mobileNavToggle.classList.toggle('active');
+            mainNav.classList.toggle('active');
+        });
+
+        // Load More Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            
+            // Simulating load more functionality
+            loadMoreBtn.addEventListener('click', function() {
+                // Code to load more games
+                alert('Load more functionality will be implemented here');
+            });
+            
+            // Search Input
+            const searchInput = document.getElementById('gameSearch');
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                const gameCards = document.querySelectorAll('.tool-card');
+                
+                gameCards.forEach(card => {
+                    const title = card.querySelector('.tool-title').textContent.toLowerCase();
+                    const description = card.querySelector('.tool-description').textContent.toLowerCase();
+                    
+                    if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+            
+            // Category Filter
+            const categoryFilter = document.getElementById('categoryFilter');
+            categoryFilter.addEventListener('change', function() {
+                const category = this.value;
+                const gameCards = document.querySelectorAll('.tool-card');
+                
+                gameCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+            
+            // Platform Filter
+            const platformFilter = document.getElementById('platformFilter');
+            platformFilter.addEventListener('change', function() {
+                const platform = this.value;
+                const gameCards = document.querySelectorAll('.tool-card');
+                
+                gameCards.forEach(card => {
+                    if (platform === 'all') {
+                        card.style.display = 'block';
+                    } else {
+                        const platforms = card.dataset.platform.split(',');
+                        if (platforms.includes(platform)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

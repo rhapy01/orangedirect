@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore decentralized applications built by Orange Dynasty, featuring DeFi, NFT, and GameFi dApps">
+    <title>Orange Dynasty - Decentralized Applications</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="dapps.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS - Animate On Scroll -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Rating System CSS -->
+    <link rel="stylesheet" href="css/ratings.css">
+    <!-- Dark Theme CSS -->
+    <link rel="stylesheet" href="css/dark-theme.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo" style="display: flex; align-items: center; padding: 10px;">
+                <a href="index.html" style="display: flex; align-items: center; gap: 10px;">
+                    <img src="images/logo.png" alt="Orange Dynasty Logo" width="40" height="40" class="logo-img" style="width: 40px !important; height: 40px !important; min-width: 40px !important; min-height: 40px !important; object-fit: contain;">
+                    <span class="logo-text">Orange DIRECTORY</span>
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dapps.html" class="active">dApps</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="utilities.html">Utilities</a></li>
+                </ul>
+            </nav>
+            
+            <div class="mobile-nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="directory-page">
+        <div class="container">
+            <h1 data-aos="fade-up">Decentralized Applications</h1>
+            <p class="section-desc" data-aos="fade-up" data-aos-delay="100">
+                Explore innovative decentralized applications built by Orange Dynasty members. Our dApps leverage blockchain technology to create secure, transparent, and decentralized solutions for various use cases.
+            </p>
+            
+            <!-- Featured DApp -->
+            <div class="featured-tool" data-aos="fade-up" data-aos-delay="200">
+                <span class="featured-badge">Featured</span>
+                
+                <div class="featured-content">
+                    <div class="featured-image">
+                        <img src="assets/images/dapps/orangeswap.jpg" alt="OrangeSwap DEX">
+                        <div class="play-video">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="featured-info">
+                        <h2 class="featured-title">OrangeSwap DEX</h2>
+                        <p class="featured-description">
+                            OrangeSwap is a decentralized exchange and automated market maker (AMM) that allows users to swap tokens, provide liquidity, and earn yields through farming and staking. Built with a focus on low fees, fast transactions, and a user-friendly interface.
+                        </p>
+                        
+                        <div class="tool-specs">
+                            <div class="spec-category">
+                                <h4><i class="fas fa-shield-alt"></i> Security Features</h4>
+                                <ul>
+                                    <li>Audited by Certik and PeckShield</li>
+                                    <li>Time-locked contracts for critical functions</li>
+                                    <li>Anti-MEV protection mechanisms</li>
+                                    <li>Emergency withdrawal functions</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="spec-category">
+                                <h4><i class="fas fa-bolt"></i> Key Benefits</h4>
+                                <ul>
+                                    <li>Low trading fees (0.25%)</li>
+                                    <li>Cross-chain compatibility</li>
+                                    <li>Optimized gas efficiency</li>
+                                    <li>Governance token with staking rewards</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-tag">Solidity</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Web3.js</span>
+                            <span class="tech-tag">Hardhat</span>
+                            <span class="tech-tag">TheGraph</span>
+                        </div>
+                        
+                        <div class="tool-links">
+                            <a href="#" class="btn primary"><i class="fas fa-external-link-alt"></i> Launch App</a>
+                            <a href="#" class="btn secondary"><i class="fas fa-book"></i> Documentation</a>
+                            <a href="#" class="btn accent"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                        <div class="tool-interactions">
+                            <div class="rating-container" data-app-id="orangeswap-dex">
+                                <div class="rating-title">Rate this dApp:</div>
+                                <div class="rating-stars">
+                                    <span data-value="1"><i class="far fa-star"></i></span>
+                                    <span data-value="2"><i class="far fa-star"></i></span>
+                                    <span data-value="3"><i class="far fa-star"></i></span>
+                                    <span data-value="4"><i class="far fa-star"></i></span>
+                                    <span data-value="5"><i class="far fa-star"></i></span>
+                                    <span class="rating-value">0.0</span>
+                                </div>
+                            </div>
+                            <div class="like-container">
+                                <button class="like-button" data-app-id="orangeswap-dex">
+                                    <i class="far fa-thumbs-up"></i> Like <span class="like-count">0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Filters -->
+            <div class="filters" data-aos="fade-up">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="dapp-search" placeholder="Search dApps...">
+                </div>
+                
+                <div class="filter-options">
+                    <select id="category-filter">
+                        <option value="">All Categories</option>
+                        <option value="defi">DeFi</option>
+                        <option value="nft">NFT</option>
+                        <option value="gamefi">GameFi</option>
+                        <option value="dao">DAO</option>
+                    </select>
+                    
+                    <select id="blockchain-filter">
+                        <option value="">All Blockchains</option>
+                        <option value="ethereum">Ethereum</option>
+                        <option value="binance">Binance Smart Chain</option>
+                        <option value="polygon">Polygon</option>
+                        <option value="solana">Solana</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- DApps Grid -->
+            <div class="tools-grid" data-aos="fade-up" data-aos-delay="100">
+                <!-- DApp Card 1 -->
+                <div class="tool-card" data-category="defi" data-blockchain="ethereum">
+                    <div class="tool-logo">
+                        <img src="assets/images/dapps/orangelend.jpg" alt="OrangeLend">
+                    </div>
+                    
+                    <div class="tool-info">
+                        <h3 class="tool-title">OrangeLend</h3>
+                        <p class="tool-description">
+                            Decentralized lending and borrowing protocol with variable and fixed interest rates, flash loans, and multi-collateral lending options.
+                        </p>
+                        
+                        <div class="tool-tech-stack">
+                            <span class="tech-tag">Solidity</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Ethereum</span>
+                        </div>
+                        
+                        <div class="tool-links">
+                            <a href="#" class="link-btn" title="Launch App"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="link-btn" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://orangedirect.xyz/dapps/orangelend" class="link-btn" title="Project Page" target="_blank" rel="noopener noreferrer"><i class="fas fa-info-circle"></i></a>
+                        </div>
+                        <div class="tool-interactions">
+                            <div class="rating-container" data-app-id="orangelend">
+                                <div class="rating-title">Rate:</div>
+                                <div class="rating-stars">
+                                    <span data-value="1"><i class="far fa-star"></i></span>
+                                    <span data-value="2"><i class="far fa-star"></i></span>
+                                    <span data-value="3"><i class="far fa-star"></i></span>
+                                    <span data-value="4"><i class="far fa-star"></i></span>
+                                    <span data-value="5"><i class="far fa-star"></i></span>
+                                    <span class="rating-value">0.0</span>
+                                </div>
+                            </div>
+                            <div class="like-container">
+                                <button class="like-button" data-app-id="orangelend">
+                                    <i class="far fa-thumbs-up"></i> Like <span class="like-count">0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- DApp Card 2 -->
+                <div class="tool-card" data-category="nft" data-blockchain="polygon">
+                    <div class="tool-logo">
+                        <img src="assets/images/dapps/orangenft.jpg" alt="OrangeNFT Marketplace">
+                    </div>
+                    
+                    <div class="tool-info">
+                        <h3 class="tool-title">OrangeNFT Marketplace</h3>
+                        <p class="tool-description">
+                            Multi-chain NFT marketplace with creator royalties, batch minting, gasless transactions, and advanced search functionality.
+                        </p>
+                        
+                        <div class="tool-tech-stack">
+                            <span class="tech-tag">Solidity</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">IPFS</span>
+                            <span class="tech-tag">Polygon</span>
+                        </div>
+                        
+                        <div class="tool-links">
+                            <a href="#" class="link-btn" title="Launch App"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="link-btn" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://orangedirect.xyz/dapps/orange-nft" class="link-btn" title="Project Page" target="_blank" rel="noopener noreferrer"><i class="fas fa-info-circle"></i></a>
+                        </div>
+                        <div class="tool-interactions">
+                            <div class="rating-container" data-app-id="orangenft-marketplace">
+                                <div class="rating-title">Rate:</div>
+                                <div class="rating-stars">
+                                    <span data-value="1"><i class="far fa-star"></i></span>
+                                    <span data-value="2"><i class="far fa-star"></i></span>
+                                    <span data-value="3"><i class="far fa-star"></i></span>
+                                    <span data-value="4"><i class="far fa-star"></i></span>
+                                    <span data-value="5"><i class="far fa-star"></i></span>
+                                    <span class="rating-value">0.0</span>
+                                </div>
+                            </div>
+                            <div class="like-container">
+                                <button class="like-button" data-app-id="orangenft-marketplace">
+                                    <i class="far fa-thumbs-up"></i> Like <span class="like-count">0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- DApp Card 3 -->
+                <div class="tool-card" data-category="dao" data-blockchain="ethereum">
+                    <div class="tool-logo">
+                        <img src="assets/images/dapps/orangedao.jpg" alt="OrangeDAO Governance">
+                    </div>
+                    
+                    <div class="tool-info">
+                        <h3 class="tool-title">OrangeDAO Governance</h3>
+                        <p class="tool-description">
+                            Decentralized governance platform with proposal creation, voting, and delegation capabilities for community-driven decision making.
+                        </p>
+                        
+                        <div class="tool-tech-stack">
+                            <span class="tech-tag">Solidity</span>
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Ethereum</span>
+                            <span class="tech-tag">Snapshot</span>
+                        </div>
+                        
+                        <div class="tool-links">
+                            <a href="#" class="link-btn" title="Launch App"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="link-btn" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://orangedirect.xyz/dapps/orange-dao" class="link-btn" title="Project Page" target="_blank" rel="noopener noreferrer"><i class="fas fa-info-circle"></i></a>
+                        </div>
+                        <div class="tool-interactions">
+                            <div class="rating-container" data-app-id="orangedao-governance">
+                                <div class="rating-title">Rate:</div>
+                                <div class="rating-stars">
+                                    <span data-value="1"><i class="far fa-star"></i></span>
+                                    <span data-value="2"><i class="far fa-star"></i></span>
+                                    <span data-value="3"><i class="far fa-star"></i></span>
+                                    <span data-value="4"><i class="far fa-star"></i></span>
+                                    <span data-value="5"><i class="far fa-star"></i></span>
+                                    <span class="rating-value">0.0</span>
+                                </div>
+                            </div>
+                            <div class="like-container">
+                                <button class="like-button" data-app-id="orangedao-governance">
+                                    <i class="far fa-thumbs-up"></i> Like <span class="like-count">0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Load More -->
+            <div class="load-more-container">
+                <button id="load-more-btn" class="load-more-btn" data-aos="fade-up">Load More DApps</button>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>Orange Dynasty</h3>
+                    <p>
+                        A collective of blockchain developers, designers, and enthusiasts building the future of decentralized technology.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="dapps.html">dApps</a></li>
+                        <li><a href="tools.html">Tools</a></li>
+                        <li><a href="utilities.html">Utilities</a></li>
+                        <li><a href="games.html">Games</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section links">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Github</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates on new projects and releases.</p>
+                    <form>
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Orange Dynasty. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Socket.io for real-time updates -->
+    <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+    <!-- Include ratings scripts -->
+    <script src="js/ratings.js"></script>
+    <script src="js/ensure-all-ratings.js"></script>
+    <script src="js/real-time-ratings.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease',
+            once: true
+        });
+        
+        // Mobile Navigation
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        
+        mobileNavToggle.addEventListener('click', () => {
+            mobileNavToggle.classList.toggle('active');
+            mainNav.classList.toggle('active');
+        });
+        
+        // Load More DApps (simulation)
+        const loadMoreBtn = document.getElementById('load-more-btn');
+        let loadCount = 0;
+        
+        loadMoreBtn.addEventListener('click', () => {
+            loadCount++;
+            if (loadCount >= 2) {
+                loadMoreBtn.textContent = 'No More DApps';
+                loadMoreBtn.disabled = true;
+            } else {
+                // Here you would usually fetch more dApps and add them to the grid
+                // This is just a simulation
+                const toolsGrid = document.querySelector('.tools-grid');
+                
+                // Clone existing cards (in a real app, you'd fetch new data)
+                const cards = document.querySelectorAll('.tool-card');
+                cards.forEach(card => {
+                    const clone = card.cloneNode(true);
+                    toolsGrid.appendChild(clone);
+                });
+                
+                // Reinitialize AOS for new elements
+                AOS.refresh();
+            }
+        });
+        
+        // Search functionality
+        const searchInput = document.getElementById('dapp-search');
+        searchInput.addEventListener('input', filterDApps);
+        
+        // Category and Blockchain filters
+        const categoryFilter = document.getElementById('category-filter');
+        const blockchainFilter = document.getElementById('blockchain-filter');
+        
+        categoryFilter.addEventListener('change', filterDApps);
+        blockchainFilter.addEventListener('change', filterDApps);
+        
+        function filterDApps() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const category = categoryFilter.value;
+            const blockchain = blockchainFilter.value;
+            
+            const cards = document.querySelectorAll('.tool-card');
+            
+            cards.forEach(card => {
+                const title = card.querySelector('.tool-title').textContent.toLowerCase();
+                const description = card.querySelector('.tool-description').textContent.toLowerCase();
+                const cardCategory = card.dataset.category;
+                const cardBlockchain = card.dataset.blockchain;
+                
+                const matchesSearch = title.includes(searchTerm) || description.includes(searchTerm);
+                const matchesCategory = category === '' || cardCategory === category;
+                const matchesBlockchain = blockchain === '' || cardBlockchain === blockchain;
+                
+                if (matchesSearch && matchesCategory && matchesBlockchain) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

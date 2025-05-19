@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilities - Orange Dynasty Directory</title>
+    <link rel="stylesheet" href="utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ratings.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">ORANGE DIRECTORY</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dapps.html">dApps</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="utilities.html" class="active">Utilities</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="directory-page">
+        <div class="container">
+            <h1 data-aos="fade-up">Utilities</h1>
+            <p class="section-desc" data-aos="fade-up" data-aos-delay="100">
+                Discover practical blockchain utilities built by Orange Dynasty members to enhance your crypto experience. From token management platforms to transaction optimizers, these utilities make blockchain interaction simpler and more efficient.
+            </p>
+
+            <!-- Featured Utility -->
+            <div class="featured-tool" data-aos="fade-up" data-aos-delay="200">
+                <div class="featured-badge">Featured Utility</div>
+                <div class="featured-content">
+                    <div class="featured-image">
+                        <video width="100%" height="100%" poster="images/utilities/orange-dynasty.jpg" id="dynastyVideo">
+                            <source src="video/dvm.mp4#t=0,60" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="play-video" id="playDynastyVideo">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="featured-info">
+                        <h2 class="featured-title">The Orange Dynasty</h2>
+                        <p class="featured-description">
+                            All-in-one Web3 utility platform that brings together personalized experiences, entertainment, and secure communication in the Orange ecosystem. Created by The DVM.
+                        </p>
+                        <div class="tool-specs">
+                            <div class="spec-category">
+                                <h4><i class="fas fa-cogs"></i> Features</h4>
+                                <ul>
+                                    <li>Personalized PFP generation</li>
+                                    <li>Interactive games and challenges</li>
+                                    <li>Web3 authentication system</li>
+                                    <li>Integrated music player</li>
+                                    <li>AI chatbot assistant</li>
+                                    <li>Newsletter subscription</li>
+                                    <li>Secure messaging platform</li>
+                                </ul>
+                            </div>
+                            <div class="spec-category">
+                                <h4><i class="fas fa-check-circle"></i> Benefits</h4>
+                                <ul>
+                                    <li>All-in-one Web3 hub</li>
+                                    <li>Personalized user experience</li>
+                                    <li>Enhanced community engagement</li>
+                                    <li>Secure communication</li>
+                                    <li>Seamless blockchain integration</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Web3.js</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">IPFS</span>
+                            <span class="tech-tag">WebRTC</span>
+                        </div>
+                        <div class="tool-links">
+                            <a href="https://orangedynasty.global" class="btn primary"><i class="fas fa-external-link-alt"></i> Visit Website</a>
+                            <a href="https://x.com/dvmonchain" class="btn secondary"><i class="fab fa-twitter"></i> Creator</a>
+                            <a href="#" class="btn accent"><i class="fas fa-book"></i> Documentation</a>
+                        </div>
+                        <div class="tool-interactions">
+                            <div class="rating-container" data-app-id="featured-utility">
+                                <div class="rating-title">Rate this utility:</div>
+                                <div class="rating-stars">
+                                    <span data-value="1"><i class="far fa-star"></i></span>
+                                    <span data-value="2"><i class="far fa-star"></i></span>
+                                    <span data-value="3"><i class="far fa-star"></i></span>
+                                    <span data-value="4"><i class="far fa-star"></i></span>
+                                    <span data-value="5"><i class="far fa-star"></i></span>
+                                    <span class="rating-value">0.0</span>
+                                </div>
+                            </div>
+                            <div class="like-container">
+                                <button class="like-button" data-app-id="featured-utility">
+                                    <i class="far fa-thumbs-up"></i> Like <span class="like-count">0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="filters" data-aos="fade-up">
+                <div class="search-container">
+                    <input type="text" id="utilitySearch" placeholder="Search utilities...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="filter-options">
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="portfolio">Portfolio Management</option>
+                        <option value="transaction">Transaction Management</option>
+                        <option value="defi">DeFi Tools</option>
+                        <option value="nft">NFT Utilities</option>
+                        <option value="monitoring">Monitoring & Alerts</option>
+                    </select>
+                    <select id="techFilter">
+                        <option value="all">All Technologies</option>
+                        <option value="react">React</option>
+                        <option value="vue">Vue.js</option>
+                        <option value="node">Node.js</option>
+                        <option value="python">Python</option>
+                        <option value="go">Go</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Utilities Grid -->
+            <div class="tools-grid" id="utilitiesGrid">
+                <!-- Utility 1 -->
+                <div class="tool-card" data-aos="fade-up" data-category="transaction" data-tech="react,node">
+                    <div class="tool-logo">
+                        <img src="images/utilities/gas-optimizer.jpg" alt="Gas Optimizer">
+                    </div>
+                    <div class="tool-info">
+                        <h3 class="tool-title">Gas Optimizer</h3>
+                        <p class="tool-description">
+                            Smart transaction scheduling and gas fee optimization to save on transaction costs. Set time windows for execution when gas prices are lowest.
+                        </p>
+                        <div class="tool-tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">ethers.js</span>
+                        </div>
+                        <div class="tool-links">
+                            <a href="#" class="link-btn" title="Website"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="link-btn" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="link-btn" title="Documentation"><i class="fas fa-book"></i></a>
+                        </div>
+                        <div class="tool-interactions">
+                            <div class="rating-container" data-app-id="utility-app-${Math.random().toString(36).substring(2, 8)}">
+                                <div class="rating-title">Rate:</div>
+                                <div class="rating-stars">
+                                    <span data-value="1"><i class="far fa-star"></i></span>
+                                    <span data-value="2"><i class="far fa-star"></i></span>
+                                    <span data-value="3"><i class="far fa-star"></i></span>
+                                    <span data-value="4"><i class="far fa-star"></i></span>
+                                    <span data-value="5"><i class="far fa-star"></i></span>
+                                    <span class="rating-value">0.0</span>
+                                </div>
+                            </div>
+                            <div class="like-container">
+                                <button class="like-button" data-app-id="utility-app-${Math.random().toString(36).substring(2, 8)}">
+                                    <i class="far fa-thumbs-up"></i> Like <span class="like-count">0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Utility 2 -->
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="100" data-category="defi" data-tech="vue,node">
+                    <div class="tool-logo">
+                        <img src="images/utilities/yield-optimizer.jpg" alt="Yield Optimizer">
+                    </div>
+                    <div class="tool-info">
+                        <h3 class="tool-title">Yield Optimizer</h3>
+                        <p class="tool-description">
+                            Automatically find the best yield opportunities across DeFi protocols. Compare APYs, risks, and impermanent loss projections to maximize returns.
+                        </p>
+                        <div class="tool-tech-stack">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                        <div class="tool-links">
+                            <a href="#" class="link-btn" title="Website"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="link-btn" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="link-btn" title="Documentation"><i class="fas fa-book"></i></a>
+                        </div>
+                        <div class="tool-interactions">
+                            <div class="rating-container" data-app-id="utility-app-${Math.random().toString(36).substring(2, 8)}">
+                                <div class="rating-title">Rate:</div>
+                                <div class="rating-stars">
+                                    <span data-value="1"><i class="far fa-star"></i></span>
+                                    <span data-value="2"><i class="far fa-star"></i></span>
+                                    <span data-value="3"><i class="far fa-star"></i></span>
+                                    <span data-value="4"><i class="far fa-star"></i></span>
+                                    <span data-value="5"><i class="far fa-star"></i></span>
+                                    <span class="rating-value">0.0</span>
+                                </div>
+                            </div>
+                            <div class="like-container">
+                                <button class="like-button" data-app-id="utility-app-${Math.random().toString(36).substring(2, 8)}">
+                                    <i class="far fa-thumbs-up"></i> Like <span class="like-count">0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Utility 3 -->
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="200" data-category="nft" data-tech="react,python">
+                    <div class="tool-logo">
+                        <img src="images/utilities/nft-portfolio.jpg" alt="NFT Portfolio">
+                    </div>
+                    <div class="tool-info">
+                        <h3 class="tool-title">NFT Portfolio</h3>
+                        <p class="tool-description">
+                            Track your NFT collection value in real-time. Beautiful gallery view with floor price monitoring, rarity scores, and trading opportunities.
+                        </p>
+                        <div class="tool-tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                        </div>
+                        <div class="tool-links">
+                            <a href="#" class="link-btn" title="Website"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="link-btn" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="link-btn" title="Documentation"><i class="fas fa-book"></i></a>
+                        </div>
+                        <div class="tool-interactions">
+                            <div class="rating-container" data-app-id="utility-app-${Math.random().toString(36).substring(2, 8)}">
+                                <div class="rating-title">Rate:</div>
+                                <div class="rating-stars">
+                                    <span data-value="1"><i class="far fa-star"></i></span>
+                                    <span data-value="2"><i class="far fa-star"></i></span>
+                                    <span data-value="3"><i class="far fa-star"></i></span>
+                                    <span data-value="4"><i class="far fa-star"></i></span>
+                                    <span data-value="5"><i class="far fa-star"></i></span>
+                                    <span class="rating-value">0.0</span>
+                                </div>
+                            </div>
+                            <div class="like-container">
+                                <button class="like-button" data-app-id="utility-app-${Math.random().toString(36).substring(2, 8)}">
+                                    <i class="far fa-thumbs-up"></i> Like <span class="like-count">0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Utility 4 -->
+                <div class="tool-card" data-aos="fade-up" data-category="monitoring" data-tech="go,node">
+                    <div class="tool-logo">
+                        <img src="images/utilities/blockchain-alerts.jpg" alt="Blockchain Alerts">
+                    </div>
+                    <div class="tool-info">
+                        <h3 class="tool-title">Blockchain Alerts</h3>
+                        <p class="tool-description">
+                            Set custom alerts for wallet activity, price movements, smart contract events, and security threats. Get notified via email, SMS, or Telegram.
+                        </p>
+                        <div class="tool-tech-stack">
+                            <span class="tech-tag">Go</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="tool-links">
+                            <a href="#" class="link-btn" title="Website"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="link-btn" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="link-btn" title="Documentation"><i class="fas fa-book"></i></a>
+                        </div>
+                        <div class="tool-interactions">
+                            <div class="rating-container" data-app-id="utility-app-${Math.random().toString(36).substring(2, 8)}">
+                                <div class="rating-title">Rate:</div>
+                                <div class="rating-stars">
+                                    <span data-value="1"><i class="far fa-star"></i></span>
+                                    <span data-value="2"><i class="far fa-star"></i></span>
+                                    <span data-value="3"><i class="far fa-star"></i></span>
+                                    <span data-value="4"><i class="far fa-star"></i></span>
+                                    <span data-value="5"><i class="far fa-star"></i></span>
+                                    <span class="rating-value">0.0</span>
+                                </div>
+                            </div>
+                            <div class="like-container">
+                                <button class="like-button" data-app-id="utility-app-${Math.random().toString(36).substring(2, 8)}">
+                                    <i class="far fa-thumbs-up"></i> Like <span class="like-count">0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Utility 5 -->
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="100" data-category="portfolio" data-tech="react,node">
+                    <div class="tool-logo">
+                        <img src="images/utilities/tax-reporter.jpg" alt="Tax Reporter">
+                    </div>
+                    <div class="tool-info">
+                        <h3 class="tool-title">Tax Reporter</h3>
+                        <p class="tool-description">
+                            Generate comprehensive crypto tax reports for multiple jurisdictions. Import transaction history from exchanges, wallets, and DeFi protocols.
+                        </p>
+                        <div class="tool-tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="tool-links">
+                            <a href="#" class="link-btn" title="Website"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="link-btn" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="link-btn" title="Documentation"><i class="fas fa-book"></i></a>
+                        </div>
+                        <div class="tool-interactions">
+                            <div class="rating-container" data-app-id="utility-app-${Math.random().toString(36).substring(2, 8)}">
+                                <div class="rating-title">Rate:</div>
+                                <div class="rating-stars">
+                                    <span data-value="1"><i class="far fa-star"></i></span>
+                                    <span data-value="2"><i class="far fa-star"></i></span>
+                                    <span data-value="3"><i class="far fa-star"></i></span>
+                                    <span data-value="4"><i class="far fa-star"></i></span>
+                                    <span data-value="5"><i class="far fa-star"></i></span>
+                                    <span class="rating-value">0.0</span>
+                                </div>
+                            </div>
+                            <div class="like-container">
+                                <button class="like-button" data-app-id="utility-app-${Math.random().toString(36).substring(2, 8)}">
+                                    <i class="far fa-thumbs-up"></i> Like <span class="like-count">0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Utility 6 -->
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="200" data-category="transaction" data-tech="vue,go">
+                    <div class="tool-logo">
+                        <img src="images/utilities/transaction-accelerator.jpg" alt="Transaction Accelerator">
+                    </div>
+                    <div class="tool-info">
+                        <h3 class="tool-title">Transaction Accelerator</h3>
+                        <p class="tool-description">
+                            Speed up stuck transactions by optimizing gas prices and rebroadcasting to the network. Supports multiple EVM-compatible blockchains.
+                        </p>
+                        <div class="tool-tech-stack">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Go</span>
+                            <span class="tech-tag">Web3.js</span>
+                        </div>
+                        <div class="tool-links">
+                            <a href="#" class="link-btn" title="Website"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="link-btn" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="link-btn" title="Documentation"><i class="fas fa-book"></i></a>
+                        </div>
+                        <div class="tool-interactions">
+                            <div class="rating-container" data-app-id="utility-app-${Math.random().toString(36).substring(2, 8)}">
+                                <div class="rating-title">Rate:</div>
+                                <div class="rating-stars">
+                                    <span data-value="1"><i class="far fa-star"></i></span>
+                                    <span data-value="2"><i class="far fa-star"></i></span>
+                                    <span data-value="3"><i class="far fa-star"></i></span>
+                                    <span data-value="4"><i class="far fa-star"></i></span>
+                                    <span data-value="5"><i class="far fa-star"></i></span>
+                                    <span class="rating-value">0.0</span>
+                                </div>
+                            </div>
+                            <div class="like-container">
+                                <button class="like-button" data-app-id="utility-app-${Math.random().toString(36).substring(2, 8)}">
+                                    <i class="far fa-thumbs-up"></i> Like <span class="like-count">0</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container" data-aos="fade-up">
+                <button class="load-more-btn" id="loadMoreBtn">Load More</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>Orange Dynasty</h3>
+                    <p>Building the future of blockchain technology, one block at a time. Join our growing community of developers, designers, and blockchain enthusiasts.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="dapps.html">dApps</a></li>
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="tools.html">Tools</a></li>
+                        <li><a href="utilities.html">Utilities</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter to stay informed about the latest utilities and updates.</p>
+                    <form action="#" method="post">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Orange Dynasty. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Socket.io for real-time updates -->
+    <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+    <!-- Include ratings scripts -->
+    <script src="js/ratings.js"></script>
+    <script src="js/utilities-ratings.js"></script>
+    <script src="js/ensure-all-ratings.js"></script>
+    <script src="js/real-time-ratings.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Mobile Navigation Toggle
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        
+        mobileNavToggle.addEventListener('click', function() {
+            mobileNavToggle.classList.toggle('active');
+            mainNav.classList.toggle('active');
+        });
+        
+        // Featured Video Player
+        const playButton = document.getElementById('playDynastyVideo');
+        const dynastyVideo = document.getElementById('dynastyVideo');
+        
+        if (playButton && dynastyVideo) {
+            playButton.addEventListener('click', function() {
+                if (dynastyVideo.paused) {
+                    dynastyVideo.play();
+                    playButton.innerHTML = '<i class="fas fa-pause"></i>';
+                } else {
+                    dynastyVideo.pause();
+                    playButton.innerHTML = '<i class="fas fa-play"></i>';
+                }
+            });
+            
+            dynastyVideo.addEventListener('ended', function() {
+                playButton.innerHTML = '<i class="fas fa-play"></i>';
+            });
+        }
+
+        // Load More Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            
+            // Simulating load more functionality
+            loadMoreBtn.addEventListener('click', function() {
+                // Code to load more utilities
+                alert('Load more functionality will be implemented here');
+            });
+            
+            // Search Input
+            const searchInput = document.getElementById('utilitySearch');
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                const utilityCards = document.querySelectorAll('.tool-card');
+                
+                utilityCards.forEach(card => {
+                    const title = card.querySelector('.tool-title').textContent.toLowerCase();
+                    const description = card.querySelector('.tool-description').textContent.toLowerCase();
+                    
+                    if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+            
+            // Category Filter
+            const categoryFilter = document.getElementById('categoryFilter');
+            categoryFilter.addEventListener('change', function() {
+                const category = this.value;
+                const utilityCards = document.querySelectorAll('.tool-card');
+                
+                utilityCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+            
+            // Tech Filter
+            const techFilter = document.getElementById('techFilter');
+            techFilter.addEventListener('change', function() {
+                const tech = this.value;
+                const utilityCards = document.querySelectorAll('.tool-card');
+                
+                utilityCards.forEach(card => {
+                    if (tech === 'all') {
+                        card.style.display = 'block';
+                    } else {
+                        const techStack = card.dataset.tech.split(',');
+                        if (techStack.includes(tech)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
