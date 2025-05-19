@@ -1,0 +1,30 @@
+{
+  "name": "orange-directory",
+  "version": "1.0.0",
+  "description": "Orange Directory website with real-time ratings and dark theme",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "cd server && npm start",
+    "install": "cd server && npm install"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhapy01/orangedirect.git"
+  },
+  "keywords": [
+    "orange-directory",
+    "real-time",
+    "ratings",
+    "mongodb",
+    "socket.io"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rhapy01/orangedirect/issues"
+  },
+  "homepage": "https://github.com/rhapy01/orangedirect#readme"
+}

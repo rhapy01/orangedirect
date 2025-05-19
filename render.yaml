@@ -3,7 +3,6 @@ services:
   - type: web
     name: orange-directory-api
     env: node
-    rootDir: server
     buildCommand: npm install
     startCommand: npm start
     envVars:
