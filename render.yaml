@@ -1,19 +1,17 @@
 services:
-  # Backend API service
+  # Combined frontend and backend service
   - type: web
-    name: orange-directory-api
+    name: orange-directory
     env: node
-    buildCommand: cd server && npm install
-    startCommand: cd server && npm start
+    buildCommand: npm install
+    startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
       - key: PORT
-        value: 10000
+        value: 3000
       - key: MONGODB_URI
-        fromDatabase:
-          name: orange-directory-db
-          property: connectionString
+        value: mongodb+srv://daejimyung:gxo9ubmEtTNllzzs@cluster0.ptct7mp.mongodb.net/orange-directory?retryWrites=true&w=majority&appName=Cluster0
 
   # Frontend static site
   - type: web
