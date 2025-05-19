@@ -19,7 +19,7 @@ services:
   - type: web
     name: orange-directory-frontend
     env: static
-    buildCommand: echo "No build step needed for static site"
+    buildCommand: npm install
     staticPublishPath: ./
     routes:
       - type: rewrite
